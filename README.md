@@ -8,8 +8,8 @@ Using C++ in this way allows us to isolate performance-critical pieces of game l
 
 1. Create a new extension repo using the [godot-cpp-template](https://github.com/godotengine/godot-cpp-template). This will leverage the official [godot-cpp](https://github.com/godotengine/godot-cpp) bindings.
 2. Update `EXTENSION-NAME` throughout the repo with your desired name.
-3. Add your classes to the `src/` directory, and update `register_types.cpp`.
-4. Build the project by running `scons`.
-5. Reference the new C++ classes in GDScript directly by name.
+3. Add your classes to the `src/` directory, and update `register_types.cpp`. See this repo for examples.
+4. Build the project by running `scons`. This will output binaries to `demo/bin`.
+5. Reference the new C++ classes in GDScript directly by name in the `demo/` project.
 
 Note: In Godot 4.3 and older, you may need to use the `Reload Project` feature to enable auto-complete in GDScript. This will be fixed in Godot 4.4.
