@@ -13,3 +13,11 @@ Using C++ in this way allows us to isolate performance-critical pieces of game l
 5. Reference the new C++ classes in GDScript directly by name in the `demo/` project.
 
 Note: In Godot 4.3 and older, you may need to use the `Reload Project` feature to enable auto-complete in GDScript. This will be fixed in Godot 4.4.
+
+## Generating Docs
+
+To generate docs for C++ GDExtensions, use the Godot binary from the directory where the compiled GDExtension lives:
+```
+cd demo
+godot --doctool .. --gdextension-docs
+```
