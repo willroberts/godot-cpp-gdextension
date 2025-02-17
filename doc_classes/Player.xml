@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Player" inherits="CharacterBody2D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		This is an example of a player with _physics_process implemented in C++.
+	</brief_description>
+	<description>
+		This is an example of a player with _physics_process implemented in C++.
+	</description>
+	<tutorials>
+	</tutorials>
+	<members>
+		<member name="speed" type="float" setter="set_speed" getter="get_speed" default="100.0">
+		</member>
+	</members>
+</class>
