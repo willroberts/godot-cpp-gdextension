@@ -1,4 +1,5 @@
 #include "register_types.h"
+#include "player.h"
 #include "summator.h"
 #include "traffic_light.h"
 #include <gdextension_interface.h>
@@ -14,6 +15,9 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level) {
 	}
 	GDREGISTER_CLASS(Summator);
 	GDREGISTER_CLASS(TrafficLight);
+	// Use GDREGISTER_RUNTIME_CLASS to avoid in-editor execution.
+	// Can also use if (Engine->get_singleton()->is_editor_hint()) to isolate editor code.
+	GDREGISTER_RUNTIME_CLASS(Player);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
