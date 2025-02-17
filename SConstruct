@@ -4,8 +4,7 @@ import sys
 
 from methods import print_error
 
-
-libname = "EXTENSION-NAME"
+libname = "example"
 projectdir = "demo"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
